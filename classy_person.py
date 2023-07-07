@@ -10,11 +10,11 @@ don't forget the use of 'self' and to have the methods:
 class Person:
     age = 0
 
-    object_name =""
+    name =""
 
-    def __init__(self, age, object_name):
+    def __init__(self, age, name):
         self.age = age
-        self.object_name = object_name
+        self.object_name = name
     
     def increase_age(self):
         self.age = self.age + 1
@@ -22,13 +22,13 @@ class Person:
 
     def say_greeting(self):
         object_name = self.object_name
-        print(f"Hello World! My name is {object_name}!")
+        print(f'Hello world! My name is {object_name}!')
     
     def count_to_age(self):
         for a in range(0,self.age):
             print(a)
 
-x = Person(20, "Lonny")
+x = Person(age=20,name= "Lonny")
 
 x.increase_age()
 x.say_greeting()
